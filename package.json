@@ -12,7 +12,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bn.js": "~4.11.8"
+    "binet": "~0.0.1",
+    "bn.js": "~4.11.8",
+    "bufio": "~0.0.1"
   },
   "devDependencies": {
     "mocha": "^4.0.1"

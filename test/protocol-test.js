@@ -4,6 +4,7 @@
 
 'use strict';
 
+const fs = require('fs')
 const assert = require('./util/assert');
 const Network = require('../lib/protocol/network');
 const util = require('../lib/utils/util');
@@ -12,11 +13,11 @@ const TX = require('../lib/primitives/tx');
 const Framer = require('../lib/net/framer');
 const Parser = require('../lib/net/parser');
 const packets = require('../lib/net/packets');
-const common = require('./util/common');
+const TXContext = require('./util/txc');
 const network = Network.get('main');
 
-const tx8 = common.readTX('tx8');
-const tx9 = common.readTX('tx9');
+const tx8 = new TXContext(fs.readFileSync('./data/tx8'));
+const tx9 = new TXContext(fs.readFileSync('./data/tx9'));
 
 describe('Protocol', function() {
   const pkg = require('../lib/pkg');

@@ -7,11 +7,14 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --reporter=spec test/*.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bn.js": "~4.11.8"
+  },
+  "devDependencies": {
+    "mocha": "^4.0.1"
   }
 }

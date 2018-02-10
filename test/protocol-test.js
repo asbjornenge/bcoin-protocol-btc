@@ -6,8 +6,8 @@
 
 const fs = require('fs')
 const assert = require('./util/assert');
-const Network = require('../lib/protocol/network');
-const util = require('../lib/utils/util');
+const Network = require('../lib/network');
+const util = require('../utils/util');
 const NetAddress = require('../lib/net/netaddress');
 const TX = require('../lib/primitives/tx');
 const Framer = require('../lib/net/framer');

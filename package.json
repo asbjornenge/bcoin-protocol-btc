@@ -1,7 +1,7 @@
 {
   "name": "bcoin-protocol-btc",
   "version": "1.0.0",
-  "description": "",
+  "description": "Bcoin BTC protocol",
   "main": "index.js",
   "directories": {
     "lib": "lib"
@@ -10,5 +10,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bn.js": "~4.11.8"
+  }
 }
